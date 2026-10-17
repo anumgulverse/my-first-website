@@ -1,0 +1,612 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Emily Dickinson</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Georgia, "Times New Roman", serif;
+            background-color: #f6f0e9;
+            color: #403746;
+            line-height: 1.9;
+        }
+
+        header {
+            background: linear-gradient(135deg, #d9e3d3, #ead9e5);
+            text-align: center;
+            padding: 45px 20px;
+            border-bottom: 6px solid #bd8c9c;
+        }
+
+        .portrait {
+            width: 185px;
+            height: 225px;
+            object-fit: cover;
+            border: 7px solid #fffaf4;
+            border-radius: 100px 100px 15px 15px;
+            box-shadow: 0 7px 20px rgba(73, 51, 72, 0.22);
+        }
+
+        h1 {
+            color: #593c5c;
+            font-size: clamp(30px, 5vw, 46px);
+            line-height: 1.25;
+            margin: 24px auto 10px;
+            max-width: 800px;
+        }
+
+        .subtitle {
+            color: #805b76;
+            font-size: 19px;
+            font-style: italic;
+            margin-bottom: 20px;
+        }
+
+        .opening {
+            max-width: 720px;
+            margin: auto;
+            font-size: 17px;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 22px;
+        }
+
+        section {
+            background: #fffaf4;
+            padding: 30px;
+            margin-bottom: 32px;
+            border-radius: 14px;
+            border: 1px solid #e9dce0;
+            box-shadow: 0 6px 18px rgba(79, 55, 73, 0.08);
+        }
+
+        h2 {
+            color: #87566f;
+            font-size: 27px;
+            line-height: 1.4;
+            margin-top: 0;
+            padding-bottom: 12px;
+            border-bottom: 2px solid #ead6df;
+        }
+
+        p {
+            font-size: 16px;
+        }
+
+        figure {
+            margin: 22px 0;
+        }
+
+        .story-image {
+            width: 100%;
+            max-height: 350px;
+            object-fit: cover;
+            display: block;
+            border-radius: 10px;
+        }
+
+        figcaption {
+            color: #786b77;
+            font-size: 13px;
+            font-style: italic;
+            text-align: center;
+            margin-top: 9px;
+        }
+
+        .green-section {
+            background: #edf1e7;
+            border-top: 4px solid #9eaf91;
+        }
+
+        .rose-section {
+            background: #f4e7e9;
+            border-top: 4px solid #bd8c9c;
+        }
+
+        .lavender-section {
+            background: #eee8f2;
+            border-top: 4px solid #a88eb6;
+        }
+
+        .quote {
+            margin: 24px 0;
+            padding: 20px 24px;
+            background: #e8e0ed;
+            border-left: 5px solid #9b7ca8;
+            color: #60496a;
+            font-size: 18px;
+            font-style: italic;
+        }
+
+        .poem-list {
+            padding-left: 25px;
+        }
+
+        .poem-list li {
+            padding: 15px 12px;
+            margin: 12px 0;
+            border-bottom: 1px solid #d9cbdc;
+        }
+
+        .poem-title {
+            color: #6f476b;
+            font-size: 19px;
+            font-weight: bold;
+        }
+
+        a {
+            color: #7d4f70;
+            font-weight: bold;
+            text-decoration-thickness: 1px;
+            text-underline-offset: 4px;
+        }
+
+        a:hover {
+            color: #53764f;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px 20px;
+            color: #593c5c;
+            background: #dce5d6;
+            border-top: 5px solid #bd8c9c;
+        }
+
+        footer p {
+            margin: 5px;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                padding: 30px 16px;
+            }
+
+            section {
+                padding: 21px;
+            }
+
+            h2 {
+                font-size: 23px;
+            }
+
+            .portrait {
+                width: 155px;
+                height: 190px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+
+        <img
+            class="portrait"
+            src="https://upload.wikimedia.org/wikipedia/commons/0/0e/Emily_Dickinson_daguerreotype.jpg"
+            alt="Portrait of Emily Dickinson as a young woman">
+
+        <h1>Emily Dickinson: The World She Kept Within</h1>
+
+        <p class="subtitle">
+            Getting to know the woman behind the poems
+        </p>
+
+        <p class="opening">
+            Emily Dickinson spent much of her life in one place, yet
+            her poetry travelled far beyond it. She wrote about things
+            everyone experiences but not everyone knows how to explain:
+            hope, loneliness, love, death, and the fear of the unknown.
+            Her life was quiet in many ways, but her thoughts were
+            anything but small.
+        </p>
+
+    </header>
+
+    <main>
+
+        <section class="green-section">
+
+            <h2>1. Growing Up in Amherst</h2>
+
+            <figure>
+                <img
+                    class="story-image"
+                    src="https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?auto=format&fit=crop&w=1100&q=85"
+                    alt="A peaceful countryside landscape in the early morning">
+
+                <figcaption>
+                    The natural world offered Dickinson endless subjects
+                    to observe and write about.
+                </figcaption>
+            </figure>
+
+            <p>
+                Emily Elizabeth Dickinson was born on December 10, 1830,
+                in Amherst, Massachusetts, in the United States. She
+                grew up in a respectable family and received a good
+                education for a girl of her time. At Amherst Academy,
+                she studied literature, science, history, and other
+                subjects. She later attended Mount Holyoke Female
+                Seminary for a short period before returning home.
+                Although her formal education did not continue for
+                many years, she remained curious and continued learning
+                through books, letters, and her own observations.
+            </p>
+
+            <p>
+                Emily had a particular interest in nature. She enjoyed
+                gardening, studying plants, and collecting flowers.
+                She even prepared a herbarium containing pressed plants
+                during her younger years. These interests later became
+                important in her poetry. A bird, a flower, a changing
+                season, or a small detail in the garden could lead her
+                towards a much bigger question about life. She noticed
+                things that other people might overlook and found
+                meaning in ordinary moments.
+            </p>
+
+            <p>
+                Her childhood was not without sadness. Like many people
+                living in the nineteenth century, she grew up at a time
+                when illness and death were common parts of life. She
+                became familiar with loss at a relatively young age.
+                These experiences did not explain everything she would
+                later write, but they introduced her to the uncertainty
+                of life. Even as a young woman, she was developing an
+                interest in subjects that had no easy answers.
+            </p>
+
+        </section>
+
+
+        <section class="rose-section">
+
+            <h2>2. The People Who Shaped Her Life</h2>
+
+            <figure>
+                <img
+                    class="story-image"
+                    src="https://commons.wikimedia.org/wiki/Special:FilePath/Emily_Dickinson_Homestead.jpg"
+                    alt="The historic Dickinson family home in Amherst, Massachusetts">
+
+                <figcaption>
+                    The Dickinson Homestead, where Emily spent much
+                    of her life with her family.
+                </figcaption>
+            </figure>
+
+            <p>
+                Emily was the middle child of Edward Dickinson and
+                Emily Norcross Dickinson. Her older brother, Austin,
+                and younger sister, Lavinia, remained important figures
+                in her life. Her father was a lawyer who also took part
+                in public life, while her mother was often described
+                as reserved. Emily's relationship with her mother was
+                complicated, and their emotional distance has been
+                discussed by biographers. However, Emily's family life
+                should not be reduced to a single unhappy relationship.
+                It included affection, disagreements, responsibilities,
+                and the ordinary experiences of living closely with
+                other people.
+            </p>
+
+            <p>
+                Her relationship with her sister Lavinia was especially
+                significant. Lavinia stayed close to Emily and respected
+                her privacy. After Emily died, Lavinia discovered her
+                sister's collection of nearly 1,800 poems. She understood
+                that these writings deserved to be shared and helped
+                bring them to publishers. Without Lavinia's discovery
+                and efforts, many of Emily's poems might have remained
+                unknown to readers. It is moving to think that the
+                world came to know Emily's words partly because her
+                sister recognised their value.
+            </p>
+
+            <p>
+                Emily also had close friends and meaningful intellectual
+                relationships. Her friendship with Susan Gilbert, who
+                later married Austin, was particularly important and
+                has attracted considerable attention from scholars.
+                Emily exchanged letters with friends and family,
+                sharing thoughts, jokes, affection, and ideas. She
+                never married, but that does not mean she lived without
+                love or emotional connection. Her letters reveal a
+                lively personality that can be difficult to see if
+                we imagine her only as a silent woman sitting alone
+                in a room.
+            </p>
+
+            <p>
+                As an adult, Emily became increasingly private and
+                spent much of her time at the family home. She continued
+                writing, reading, and communicating through letters.
+                It is tempting to see her privacy only as loneliness,
+                but we cannot know exactly how she experienced every
+                part of her life. What we can see is that she created
+                a remarkable body of work while living outside many
+                of the expectations placed on women in her society.
+            </p>
+
+        </section>
+
+
+        <section class="lavender-section">
+
+            <h2>3. Why Death Appeared So Often in Her Poems</h2>
+
+            <figure>
+                <img
+                    class="story-image"
+                    src="https://images.unsplash.com/photo-1508615070457-7baeba4003ab?auto=format&fit=crop&w=1100&q=85"
+                    alt="A quiet path through trees, suggesting a journey into the unknown">
+
+                <figcaption>
+                    Dickinson often used journeys and familiar images
+                    to explore life's biggest uncertainties.
+                </figcaption>
+            </figure>
+
+            <p>
+                One of the first things readers notice about Emily
+                Dickinson is how often she writes about death. To
+                understand this, it helps to remember the time in
+                which she lived. The nineteenth century had high rates
+                of illness and mortality compared with today. Death
+                was a more visible part of everyday life, and Emily
+                experienced the loss of people around her. She also
+                lived close to the town cemetery. Such experiences
+                gave her many reasons to think about how quickly
+                life could change and what might lie beyond it.
+            </p>
+
+            <p>
+                Still, death was more than a personal sadness for
+                Dickinson. It became a way for her to explore questions
+                about faith, eternity, time, and human understanding.
+                She lived in a society where Christian beliefs about
+                the afterlife were influential, but her poems do not
+                always offer simple religious answers. At times, she
+                seems hopeful about eternity; at other times, she
+                questions what people can really know. Her writing
+                allows belief and doubt to exist together.
+            </p>
+
+            <p>
+                In "Because I Could Not Stop for Death," death appears
+                as a polite carriage driver who takes the speaker on
+                a journey. The idea is unusual because death is not
+                presented as a frightening monster. Instead, it seems
+                calm, almost ordinary. Yet as the journey continues,
+                the poem becomes increasingly mysterious. The speaker
+                passes familiar scenes of life before moving towards
+                the grave and eternity. The calm tone makes the subject
+                even more powerful because readers are left to consider
+                what the journey really means.
+            </p>
+
+            <p>
+                Her interest in death does not mean that every poem
+                came from unhappiness or that she wanted to die.
+                That would be an unfair assumption about a complex
+                person. Dickinson was also interested in hope, beauty,
+                humour, identity, and the possibility of understanding
+                the world. Death gave her a way to examine the limits
+                of human knowledge. Rather than telling readers what
+                to believe, she invites them to sit with uncertainty
+                and form their own thoughts.
+            </p>
+
+            <div class="quote">
+                What makes Dickinson's poetry powerful is not that
+                she solves life's mysteries, but that she finds words
+                for the questions we are often afraid to ask.
+            </div>
+
+        </section>
+
+
+        <section class="green-section">
+
+            <h2>4. The Way She Saw the World Through Words</h2>
+
+            <figure>
+                <img
+                    class="story-image"
+                    src="https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&w=1100&q=85"
+                    alt="A notebook and pen on a desk, representing the process of writing">
+
+                <figcaption>
+                    Writing offered Dickinson a way to explore thoughts
+                    that ordinary conversation could not always express.
+                </figcaption>
+            </figure>
+
+            <p>
+                Emily Dickinson's writing style was unusual for her
+                time. She often used short lines, slant rhymes,
+                unexpected capital letters, and dashes instead of
+                conventional punctuation. Her poems do not always
+                follow the rules readers expect. The dashes can make
+                a thought feel interrupted, leave space for reflection,
+                or give a line several possible meanings. Her use
+                of rhythm and sound also gives many poems a musical
+                quality, even when their ideas are difficult.
+            </p>
+
+            <p>
+                Another important feature of her writing is the way
+                she turns small things into larger ideas. A bird
+                becomes a picture of hope. A carriage ride becomes
+                a meditation on death. A simple question about being
+                a "Nobody" becomes a playful reflection on identity
+                and public attention. She did not need grand settings
+                or complicated stories to explore important subjects.
+                She could begin with something familiar and gradually
+                lead readers towards a surprising thought.
+            </p>
+
+            <p>
+                Dickinson also leaves many of her poems open to
+                interpretation. She may use a word that has more
+                than one meaning or end a poem without fully resolving
+                its central question. This can make her poetry
+                challenging, but it also gives readers room to think.
+                Two people can read the same poem and feel differently
+                about it because each brings personal experiences
+                and beliefs to the words. Her poems do not always
+                explain how we should feel; they give us space to
+                discover that feeling ourselves.
+            </p>
+
+            <p>
+                During her lifetime, only a small number of her poems
+                were published, and some appeared in edited forms.
+                Emily died on May 15, 1886, at the age of 55. In 1890,
+                the first collection of her poems was published.
+                Later editors worked to restore more of her original
+                punctuation and wording. Today, she is regarded as
+                one of the most important American poets. Her work
+                reminds us that a quiet life can still contain a
+                great deal of imagination, feeling, and intellectual
+                courage.
+            </p>
+
+        </section>
+
+
+        <section class="rose-section">
+
+            <h2>5. Three Poems Worth Knowing</h2>
+
+            <p>
+                Emily Dickinson wrote about the subjects that make
+                us human: the need for hope, the fear of the unknown,
+                and the desire to understand who we are. These three
+                poems show how differently she could approach life.
+                One offers comfort, another explores mortality, and
+                the third uses humour to question the importance of
+                being noticed by others.
+            </p>
+
+            <figure>
+                <img
+                    class="story-image"
+                    src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?auto=format&fit=crop&w=1100&q=85"
+                    alt="Pink and white flowers growing together in a garden">
+
+                <figcaption>
+                    Flowers and other details from nature often helped
+                    Dickinson express ideas that were difficult to put
+                    into direct words.
+                </figcaption>
+            </figure>
+
+            <ol class="poem-list">
+
+                <li>
+                    <span class="poem-title">
+                        Hope is the Thing with Feathers
+                    </span>
+
+                    <p>
+                        In this poem, Dickinson compares hope to a
+                        bird that keeps singing even during difficult
+                        times. The bird does not demand anything in
+                        return, and its song continues through storms
+                        and hardship. The poem suggests that hope can
+                        stay with us when circumstances are painful
+                        or uncertain. What makes it memorable is the
+                        idea that hope does not need everything to
+                        be perfect before it can exist.
+                    </p>
+                </li>
+
+                <li>
+                    <span class="poem-title">
+                        Because I Could Not Stop for Death
+                    </span>
+
+                    <p>
+                        This poem presents death as a polite figure
+                        who takes the speaker on a carriage ride.
+                        As they travel, they pass scenes associated
+                        with childhood, maturity, and the passing of
+                        time. The journey eventually leads towards
+                        the grave and the idea of eternity. Dickinson
+                        makes death seem calm and familiar, yet the
+                        poem leaves readers wondering about the nature
+                        of the afterlife and whether it can ever
+                        truly be understood.
+                    </p>
+                </li>
+
+                <li>
+                    <span class="poem-title">
+                        I'm Nobody! Who Are You?
+                    </span>
+
+                    <p>
+                        Unlike her more serious poems, this one is
+                        playful and humorous. The speaker introduces
+                        herself as a "Nobody" and asks whether the
+                        reader is one too. The poem questions the
+                        pressure to become famous and constantly
+                        attract attention. Dickinson seems to suggest
+                        that remaining unknown can offer freedom
+                        from public judgement. Its light tone makes
+                        the message memorable, while its questions
+                        about identity and belonging remain relevant.
+                    </p>
+                </li>
+
+            </ol>
+
+            <p>
+                These poems show why Dickinson continues to attract
+                readers. She could find hope in a bird, mystery in
+                a carriage ride, and humour in the idea of being
+                unknown. Her poetry does not belong to just one
+                emotion or one stage of life. It speaks to people
+                who have experienced happiness, uncertainty, loss,
+                or the simple wish to be understood.
+            </p>
+
+            <p>
+                To explore more of her poetry and life, visit the
+                <a href="https://www.poetryfoundation.org/poets/emily-dickinson"
+                   target="_blank" rel="noopener noreferrer">
+                    Poetry Foundation's Emily Dickinson page
+                </a>
+                or the
+                <a href="https://www.emilydickinsonmuseum.org/"
+                   target="_blank" rel="noopener noreferrer">
+                    Emily Dickinson Museum
+                </a>.
+            </p>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p><strong>Emily Dickinson</strong></p>
+        <p>A closer look at the woman, her life, and the words she left behind.</p>
+    </footer>
+
+</body>
+</html>
